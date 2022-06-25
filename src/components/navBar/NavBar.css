@@ -1,0 +1,14 @@
+#nav-bar{
+    display:flex;
+    align-items:flex-end;
+    border:1px solid;
+    height:64px;
+}
+
+.navbar-navlink{
+    color:brown
+}
+
+.navbar-navlink-active{
+    color:black
+}

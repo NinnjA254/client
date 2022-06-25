@@ -1,24 +1,35 @@
-import logo from './logo.svg';
+import React, { Component, useEffect,useState } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { checkLogin } from './api/checkLogin';
 import './App.css';
+import Login from './components/login/Login';
+import Main from './components/main.js/Main';
+import useLocalStorage from './hooks/useLocalStorage.js';
 
 function App() {
+  
+  //const [isLoggedIn, setIsLoggedIn] = useLocalStorage(null, 'isLoggedIn');
+  const [isLoggedIn, setIsLoggedIn] = useState(null);
+  useEffect(() => {
+    checkLogin().then((loginStatus) => {
+      if(loginStatus){
+        setIsLoggedIn(true)
+      }
+      if(!loginStatus){
+        setIsLoggedIn(false);
+      }
+    })
+  }, [isLoggedIn]);
+
+  function chooseComponent(){
+    if(isLoggedIn === null) return <div></div>
+    else if(isLoggedIn) return <Main/>
+    return <Login setIsLoggedIn={setIsLoggedIn}/>
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        {chooseComponent()}
+		</div>
   );
 }
 
