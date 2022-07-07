@@ -2,6 +2,7 @@ import './Login.css';
 import React, {} from 'react';
 
 import axios from '../../axiosConfig';
+import { login } from '../../api/login';
 
 
 
@@ -13,11 +14,11 @@ export default function Login({setIsLoggedIn}){
             lastName:e.target.lastName.value,
             password: e.target.password.value
         }
-        axios.post('/login',user).then((res) =>{
-            if(true){ //if login success logic goes here
+        login(user).then((response) =>{
+            if(response.status === 200){ //if login success logic goes here
                 setIsLoggedIn(true)
             }
-            
+            //alerting user what is wrong with their credentials goes here 
         })
     }
     return(

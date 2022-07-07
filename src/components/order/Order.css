@@ -1,0 +1,63 @@
+#order{
+    
+    margin-bottom: 2px;
+    border-bottom: 1px solid grey;
+    background-color: rgba(31, 92, 21,0.3)
+   
+    
+}
+
+#order-details{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    
+    height:45px;
+    margin: 0 10px 0 10px;
+}
+#order-details-underline {
+    
+
+}
+
+#items-sold-container{
+    
+    margin: 0 10px 0 10px;
+}
+
+#items-sold{
+    padding-left: 20px;
+    margin-left:1px;
+    border-left: 2px solid #1F5C15;
+    
+}
+
+#item-sold{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:15%
+}
+
+#order-fulfil-cancel-buttons-container{
+    display:flex;
+    justify-content:center
+}
+
+.order-button{
+    background-color: rgba(255, 255, 255);
+    color:black;
+    cursor:pointer;
+    border: none;
+    margin: 0 40px 0 40px;
+    height: 30px;
+    font-size:12px;
+    width:60px;
+    border-radius: 5px
+}
+.order-button:hover{
+
+}
+.order-button:disabled{
+    background-color: rgba(255, 255, 255,0.4);
+}

@@ -1,5 +1,5 @@
-import React, { Component, useEffect,useState } from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import React, { useEffect,useState } from 'react';
+
 import { checkLogin } from './api/checkLogin';
 import './App.css';
 import Login from './components/login/Login';
@@ -11,19 +11,19 @@ function App() {
   //const [isLoggedIn, setIsLoggedIn] = useLocalStorage(null, 'isLoggedIn');
   const [isLoggedIn, setIsLoggedIn] = useState(null);
   useEffect(() => {
-    checkLogin().then((loginStatus) => {
-      if(loginStatus){
+    checkLogin().then((response) => {
+      if(response.status === 200){
         setIsLoggedIn(true)
       }
-      if(!loginStatus){
+      if(response.status !== 200){
         setIsLoggedIn(false);
       }
     })
   }, [isLoggedIn]);
 
   function chooseComponent(){
-    if(isLoggedIn === null) return <div></div>
-    else if(isLoggedIn) return <Main/>
+    if(isLoggedIn === null) return <div>{/* handle loading time */}</div>
+    if(isLoggedIn) return <Main/>
     return <Login setIsLoggedIn={setIsLoggedIn}/>
   }
   return (

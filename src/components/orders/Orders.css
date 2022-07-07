@@ -1,0 +1,38 @@
+#orders{
+    position:relative;
+    /* border:1px solid brown; */
+    height:100%;
+    
+}
+
+#orders-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    color:#1F5C15;
+    margin: 0 30px 10px 10px
+}
+
+#orders-search-bar {
+    box-shadow: 0px 1px 3px -1px rgba(17, 17, 17,0.2);
+    padding:10px
+}
+
+#orders-container{
+    /* border: 1px solid yellow; */
+    height:80%;
+    overflow-x: hidden;
+    padding:0;
+    
+}
+
+#create-order-button{
+    background-color:#1F5C15;
+    height: 40px;
+    border:none;
+    color: white;
+    cursor:pointer
+}
+#create-order-button:hover{
+    background-color:#53a647;
+}

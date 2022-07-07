@@ -1,14 +1,36 @@
 #nav-bar{
     display:flex;
-    align-items:flex-end;
+    align-items:center;
     border:1px solid;
     height:64px;
+    display:flex;
+    flex-direction:column;
+    height:100%;
+    width:80px;
+    margin-right:1px
 }
 
 .navbar-navlink{
-    color:brown
+    color:brown;
+    font-size:11px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:50px
+
 }
 
 .navbar-navlink-active{
-    color:black
+    color:black;
+    font-size:12px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:50px
+}
+
+#navbar-top-link{
+    margin-top:100px
 }

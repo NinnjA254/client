@@ -1,0 +1,53 @@
+#cart{
+   
+}
+
+#add-item-form-container{
+	display:flex;
+	justify-content:space-between;
+
+}
+#add-item-form-container button{
+	width: 15%;
+	height: 22px
+}
+#add-item-form-container input{
+	width: 20%;
+	height: 22px;
+}
+
+#add-item-form-container select{
+	width: 60%;
+	height: 22px;
+}
+
+#selected-items-container{
+	border: 1px solid
+}
+
+.cart-item-sold{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#cart-remove{
+	width: 10%;
+	height: 22px;
+}
+
+.cart-input{
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 10%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+#add{
+  width:20px
+}

@@ -17,14 +17,16 @@ export default function Main(){
   return(
     <div id = 'main'>
       <BrowserRouter>
-        <div id = 'main-header'>
-          <div id = 'main-title'>
-            <p>KOMAZA Management System</p>
+        <NavBar/>
+        <div id = 'main-header-and-body-container'>
+          <div id = 'main-header'>
+            {/*add logo here*/}
+            <h3>KOMAZA Management System</h3>
           </div>
-          <NavBar/>
+          {routes}
+          <Outlet/>
         </div>
-        {routes}
-        <Outlet/>
+        
         
       </BrowserRouter>
     </div>
