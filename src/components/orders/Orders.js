@@ -38,7 +38,7 @@ export default function Orders(){
 		</>
 	)
 
-	const createOrderRender = (
+	const createOrder = (
 		<CreateOrder setShowForm = {setShowForm} setOrders = {setOrders}/>
 	)
 	return(
@@ -50,7 +50,7 @@ export default function Orders(){
 			<div id ='orders-search-bar'>
 				Search
 			</div>
-			{showForm ? createOrderRender : ordersRender}	
+			{showForm ? createOrder : ordersRender}	
 		</div>
 	)
 }

@@ -9,9 +9,7 @@
 	justify-content: center;
 	align-items: center;
 	/* border: 1px solid blue; */
-	
-    
-    
+  background-color: rgba(31, 92, 21,0.1);   
 }
 .create-order-form {
   position: relative;
@@ -21,6 +19,7 @@
   padding: 45px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  margin-top:10px;
 }
 .create-order-form-input {
   font-family: "Roboto", sans-serif;
