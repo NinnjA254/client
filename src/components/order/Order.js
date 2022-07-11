@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { cancelOrder } from '../../api/cancelOrder';
 import { fetchOrders } from '../../api/fetchOrders';
 import { fulfilOrder } from '../../api/fulfilOrder';
+import StatusIndicator from '../StatusIndicator/StatusIndicator';
 import './Order.css';
 
 
@@ -57,14 +58,14 @@ export default function Order({order,setOrders}){
 		<div id ="order">
 			<div id = 'order-details'>
 				<p>{order._id}</p>
-				<p>{order.customerId.firstName + " " + order.customerId.lastName}</p>
-				<p>{order.orderStatus.toString()}</p>
 				<p>{order.time}</p>
-				<p>total </p>
+				<p>{order.customerId.firstName + " " + order.customerId.lastName}</p>
+				<StatusIndicator status = {isFulfilled}/>
+				<p>total:  </p>
 			</div>
 			
 			<div id = 'items-sold-container'>
-				<h4>Items sold</h4>
+				<h5>Items sold</h5>
 				<div id = 'items-sold'>
 					{itemsSold}
 				</div>

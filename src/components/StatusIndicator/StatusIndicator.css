@@ -1,0 +1,29 @@
+#status-indicator{
+    width: 70px;
+    height: 20px;
+    border-radius: 16px;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+    padding:0 4px 0 4px;
+}
+.fulfilled {
+    background-color:rgba(31, 92, 21,0.3);
+}
+.pending{
+    background-color: rgba(245, 195, 69,0.3);
+}
+
+#status-indicator-circle {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right:5px
+}
+.pending-circle {
+    background-color: #F5C345;
+}
+.fulfilled-circle {
+    background-color: #226e18;
+}

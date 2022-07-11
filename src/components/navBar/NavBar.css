@@ -7,7 +7,9 @@
     flex-direction:column;
     height:100%;
     width:80px;
-    margin-right:1px
+    margin-right:1px;
+    background: linear-gradient(90deg, rgba(141,194,111,1) 0%, rgba(118,184,82,1) 50%);
+    
 }
 
 .navbar-navlink{
