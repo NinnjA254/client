@@ -31,11 +31,9 @@ export default function Orders(){
 	},[])
 	
 	const ordersRender = (
-		<>
 			<ul id = 'orders-container'>
 				{renderOrders(orders,setOrders)}
 			</ul>
-		</>
 	)
 
 	const createOrder = (
@@ -43,13 +41,16 @@ export default function Orders(){
 	)
 	return(
 		<div id = 'orders'>
-			<div id = 'orders-header'>
-				<h3>Orders</h3>
-				{!showForm && <button id = 'create-order-button' onClick = {()=>setShowForm(prev => !prev)}>CreateOrder</button>}
+			<div id = 'orders-header-and-search-bar'>
+				<div id = 'orders-header'>
+					<h3>Orders</h3>
+					{!showForm && <button id = 'create-order-button' onClick = {()=>setShowForm(prev => !prev)}>CreateOrder</button>}
+				</div>
+				<div id ='orders-search-bar'>
+					Search
+				</div>
 			</div>
-			<div id ='orders-search-bar'>
-				Search
-			</div>
+			
 			{showForm ? createOrder : ordersRender}	
 		</div>
 	)

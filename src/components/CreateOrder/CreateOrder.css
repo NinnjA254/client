@@ -8,6 +8,7 @@
 	display:flex;
 	justify-content: center;
 	align-items: center;
+  height:calc(100% - var(--component-header-and-search-bar-height));
 	/* border: 1px solid blue; */
   background-color: rgba(31, 92, 21,0.1);   
 }

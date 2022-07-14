@@ -1,29 +1,20 @@
 #order{
-    
     margin-bottom: 2px;
     border-bottom: 1px solid grey;
     background-color: rgba(31, 92, 21,0.1);
-    
-    font-weight: bold
-   
-    
+    padding-right: 28px;
+    font-weight: bold; 
 }
 
 #order-details{
     display:flex;
     justify-content:space-between;
     align-items: center;
-    
     height:45px;
     margin: 0 10px 0 10px;
 }
-#order-details-underline {
-    
-
-}
 
 #items-sold-container{
-    
     margin: 0 10px 0 10px;
 }
 
@@ -36,11 +27,21 @@
     
 }
 
+#items-sold-total-cost{
+    
+    margin-left:1px;
+    font-size: 14px;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: right;
+    
+}
+
 #item-sold{
     display:flex;
     align-items:center;
     justify-content:space-between;
-    width:15%
+    width:18%
 }
 
 #order-fulfil-cancel-buttons-container{

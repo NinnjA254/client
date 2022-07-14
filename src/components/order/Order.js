@@ -51,6 +51,7 @@ export default function Order({order,setOrders}){
 			<div key = {index} id = 'item-sold'>
 				<p>{item.productId.name}</p>
 				<p>qty:{item.quantitySold}</p>
+				<p>Ksh {item.cost.toLocaleString()}</p>
 			</div>
 		)
 	})
@@ -61,14 +62,16 @@ export default function Order({order,setOrders}){
 				<p>{order.time}</p>
 				<p>{order.customerId.firstName + " " + order.customerId.lastName}</p>
 				<StatusIndicator status = {isFulfilled}/>
-				<p>total:  </p>
+				
 			</div>
 			
 			<div id = 'items-sold-container'>
 				<h5>Items sold</h5>
 				<div id = 'items-sold'>
 					{itemsSold}
+					<p id = 'items-sold-total-cost'>total: Ksh {order.totalCost.toLocaleString()} </p>
 				</div>
+				
 				
 			</div>
 			<div id = "order-fulfil-cancel-buttons-container">

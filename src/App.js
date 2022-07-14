@@ -2,6 +2,7 @@ import React, { useEffect,useState } from 'react';
 
 import { checkLogin } from './api/checkLogin';
 import './App.css';
+import './variables.css';
 import Login from './components/login/Login';
 import Main from './components/main.js/Main';
 import useLocalStorage from './hooks/useLocalStorage.js';
