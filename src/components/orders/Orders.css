@@ -1,39 +1,42 @@
-#orders{
-    position:relative;
-    height:calc(100% - var(--main-header-height)); 
+#orders {
+  position: relative;
+  height: calc(100% - var(--main-header-height));
 }
 
 #orders-header-and-search-bar {
-    height:var(--component-header-and-search-bar-height);
+  height: var(--component-header-and-search-bar-height);
+  box-shadow: 0px 5px 3px -1px rgba(17, 17, 17, 0.05);
 }
 
-#orders-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-end;
-    height:50px;
-    color:#1F5C15;
-    padding: 0 30px 10px 10px
+#orders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 50px;
+  color: #1f5c15;
+  padding: 0 30px 10px 10px;
 }
 
-#orders-search-bar {
-    box-shadow: 0px 1px 3px -1px rgba(17, 17, 17,0.6);
-    padding:10px
+#orders-container {
+  height: calc(100% - var(--component-header-and-search-bar-height));
+  overflow-x: hidden;
+  padding: 0;
 }
 
-#orders-container{
-    height:calc(100% - var(--component-header-and-search-bar-height));
-    overflow-x: hidden;
-    padding:0;
+#create-order-button {
+  background-color: #226e18;
+  height: 40px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+#create-order-button:hover {
+  background-color: #53a647;
 }
 
-#create-order-button{
-    background-color:#226e18;
-    height: 40px;
-    border:none;
-    color: white;
-    cursor:pointer
-}
-#create-order-button:hover{
-    background-color:#53a647;
+#create-order-heading {
+  color: #1f5c15;
+  padding: 20px 30px 10px 10px;
+  font-style: italic;
+  text-align: center;
 }

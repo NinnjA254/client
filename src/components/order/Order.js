@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { cancelOrder } from '../../api/cancelOrder';
 import { fetchOrders } from '../../api/fetchOrders';
 import { fulfilOrder } from '../../api/fulfilOrder';
@@ -76,7 +75,7 @@ export default function Order({order,setOrders}){
 			</div>
 			<div id = "order-fulfil-cancel-buttons-container">
 				<button className = 'order-button' onClick={handleFulfill} disabled = {isFulfilled}>{!isFulfilled ? 'fulfill' : 'already fulfilled'}</button>
-				<button className = 'order-button' onClick={handleCancel} disabled = {isFulfilled}>cancel</button> 
+				{!isFulfilled && <button className = 'order-button' onClick={handleCancel} disabled = {isFulfilled}>cancel</button>} 
 			</div>
 			
 

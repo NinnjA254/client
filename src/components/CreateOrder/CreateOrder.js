@@ -48,14 +48,14 @@ export default function CreateOrder({setShowForm,setOrders}){
 
 	return(
 		<div id="create-order">
-			<form className ="create-order-form" onSubmit = {handleSubmit}>
+			<form id ="create-order-form" onSubmit = {handleSubmit}>
 				<input className = 'create-order-form-input' type="text" placeholder="first name" required name = 'firstName'/>
 				<input className = 'create-order-form-input' type="text" placeholder="last name" required name = 'lastName'/>
 				<Cart 
 					selectedItems = {selectedItems}
 					setSelectedItems = {setSelectedItems}
 				/>
-				<button type = "submit">Create order</button>
+				<button type = "submit" >Create order</button>
 				<button type = "button" onClick = {() =>setShowForm(false)}>close</button>
 			</form>
 		</div>

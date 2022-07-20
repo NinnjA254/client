@@ -1,0 +1,29 @@
+#search-bar{
+  padding: 0 30px 10px 10px;
+  display:flex;
+  justify-content:space-between;
+  padding-top:10px
+}
+#search-bar-input{
+  width: 340px;
+  height: 27px;
+  font-size: 12px;
+  padding: 0 8px;
+  background-color: rgba(31, 92, 21,0.1);
+  border: 1px solid grey;
+  border-radius: 3px;
+}
+
+
+
+#search-bar-select{
+  width: 90px;
+  height: 27px;
+  font-size: 12px;
+  padding: 0 8px;
+  cursor: pointer;
+  background-color: rgba(31, 92, 21,0.1);
+  border-radius: 3px;
+  border: 1px solid grey;
+  outline: none;
+}

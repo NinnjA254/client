@@ -1,4 +1,4 @@
 .App{
     --main-header-height:40px;
-    --component-header-and-search-bar-height:90px /*acquisition, orders and inspections all have a header and a search bar.. their combined height is specified here so that they can be used to calc the height of the main(list of orders/acq/insp) container. to prevent overflow wnen screen size height changes */
+    --component-header-and-search-bar-height:100px /*acquisition, orders and inspections all have a header and a search bar.. their combined height is specified here so that they can be used to calc the height of the main(list of orders/acq/insp) container. to prevent overflow wnen screen size height changes */
 }

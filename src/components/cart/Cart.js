@@ -103,8 +103,9 @@ export default function Cart({selectedItems,setSelectedItems}){
 	return(
 		<div id = "cart">
 			<h3>Cart</h3>
-			<div id = "add-item-form-container">
+			<div id = "add-item-form">
 				<select 
+					id = 'cart-select'
 					value = {selectValue} 
 					onChange = {(e) => {
 						console.log(e.target.value)
@@ -114,6 +115,7 @@ export default function Cart({selectedItems,setSelectedItems}){
 					{populateProductOptions()}
 				</select>
 					<input 
+						id = 'cart-input'
 						type = "number" 
 						className='cart-input'
 						min={0}
@@ -121,7 +123,7 @@ export default function Cart({selectedItems,setSelectedItems}){
 						value = {qtyValue}
 						onChange = {(e) => setQtyValue(parseInt(e.target.value)||0)}
 					/>
-					<button type = "button" onClick = {handleAddItem}>Add</button>
+					<button id = 'add-to-cart-button' type = "button" onClick = {handleAddItem}>Add</button>
 			</div>
 			<ul id = "selected-items-container">
 				{populateItemsSold()}

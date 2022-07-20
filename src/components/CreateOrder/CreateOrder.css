@@ -12,11 +12,12 @@
 	/* border: 1px solid blue; */
   background-color: rgba(31, 92, 21,0.1);   
 }
-.create-order-form {
+#create-order-form {
   position: relative;
   background: #FFFFFF;
   max-width: 90%;
 	width: 100%;
+  height:90%;
   padding: 45px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
@@ -33,29 +34,39 @@
   box-sizing: border-box;
   font-size: 14px;
 }
-.create-order-form button {
+#create-order-form button {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
   background: #4CAF50;
-  width: 100%;
   border: 0;
-  padding: 15px;
   color: #FFFFFF;
   font-size: 14px;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
   cursor: pointer;
+  
 }
-.create-order-form button:hover,.form button:active,.form button:focus {
+
+#create-order-form > button{
+  width:200px;
+  height:30px;
+  margin: 70px 10px 0 10px;
+  border-radius:5px
+
+}
+
+
+
+#create-order-form button:hover,.form button:active,.form button:focus {
   background: #43A047;
 }
-.create-order-form .message {
+#create-order-form .message {
   margin: 15px 0 0;
   color: #b3b3b3;
   font-size: 12px;
 }
-.create-order-form .message a {
+#create-order-form .message a {
   color: #4CAF50;
   text-decoration: none;
 }

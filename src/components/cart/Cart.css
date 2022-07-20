@@ -2,23 +2,26 @@
    
 }
 
-#add-item-form-container{
+#add-item-form{
 	display:flex;
 	justify-content:space-between;
+	height: 40px
+	
 
 }
-#add-item-form-container button{
+#add-to-cart-button{
 	width: 15%;
-	height: 22px
+	height: 100%;
+	border: 1px solid
 }
-#add-item-form-container input{
+#add-item-form input{
 	width: 20%;
-	height: 22px;
+	height: 100%;
 }
 
-#add-item-form-container select{
+#add-item-form select{
 	width: 60%;
-	height: 22px;
+	height: 100%;
 }
 
 #selected-items-container{
@@ -46,6 +49,11 @@
   padding: 15px;
   box-sizing: border-box;
   font-size: 14px;
+}
+
+#cart-select{
+	background-color: rgba(31, 92, 21,0.1);
+	height: 101px;
 }
 
 #add{
