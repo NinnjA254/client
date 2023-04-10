@@ -1,0 +1,64 @@
+#inspection {
+  margin-bottom: 2px;
+  border-bottom: 1px solid grey;
+  background-color: rgba(31, 92, 21, 0.1);
+  padding-right: 28px;
+  font-weight: bold;
+}
+
+#inspection-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  margin: 0 10px 0 10px;
+}
+
+#items-damaged-container {
+  margin: 0 10px 0 10px;
+}
+
+#items-damaged {
+  padding-left: 20px;
+  margin-left: 1px;
+  border-left: 2px solid #1f5c15;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+#items-damaged-total-cost {
+  margin-left: 1px;
+  font-size: 14px;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: right;
+}
+
+#item-damaged {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 18%;
+}
+
+#inspection-fulfil-cancel-buttons-container {
+  display: flex;
+  justify-content: center;
+}
+
+.inspection-button {
+  background-color: rgba(255, 255, 255);
+  color: black;
+  cursor: pointer;
+  border: none;
+  margin: 0 40px 10px 40px;
+  padding: 3px 10px;
+  height: 20px;
+  font-size: 12px;
+  width: auto;
+  border-radius: 5px;
+}
+
+.inspection-button:disabled {
+  background-color: rgba(255, 255, 255, 0.4);
+}

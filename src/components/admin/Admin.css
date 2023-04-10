@@ -1,14 +1,14 @@
-#inspections {
+#employees {
   position: relative;
   height: calc(100% - var(--main-header-height));
 }
 
-#inspections-header-and-search-bar {
+#employees-header-and-search-bar {
   height: var(--component-header-and-search-bar-height);
   box-shadow: 0px 5px 3px -1px rgba(17, 17, 17, 0.05);
 }
 
-#inspections-header {
+#employees-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -17,24 +17,24 @@
   padding: 0 30px 10px 10px;
 }
 
-#inspections-container {
+#employees-container {
   height: calc(100% - var(--component-header-and-search-bar-height));
   overflow-x: hidden;
   padding: 0;
 }
 
-#create-inspection-button {
+#create-employee-button {
   background-color: #226e18;
   height: 40px;
   border: none;
   color: white;
   cursor: pointer;
 }
-#create-inspection-button:hover {
+#create-employee-button:hover {
   background-color: #53a647;
 }
 
-#create-inspection-heading {
+#create-employee-heading {
   color: #1f5c15;
   padding: 20px 30px 10px 10px;
   font-style: italic;

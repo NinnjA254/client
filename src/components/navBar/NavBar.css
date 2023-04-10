@@ -1,37 +1,45 @@
-#nav-bar{
-    display:flex;
-    align-items:center;
-    border:1px solid;
-    overflow:hidden;
-    display:flex;
-    flex-direction:column;
-    width:80px;
-    margin-right:1px;
-    background: linear-gradient(90deg, rgba(141,194,111,1) 0%, rgba(118,184,82,1) 50%);
-    
+#nav-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+  margin-right: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(141, 194, 111, 1) 0%,
+    rgba(118, 184, 82, 1) 50%
+  );
 }
 
-.navbar-navlink{
-    color:brown;
-    font-size:11px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    padding-bottom:50px
-
+.navbar-navlink {
+  color: brown;
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
 }
 
-.navbar-navlink-active{
-    color:black;
-    font-size:12px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    padding-bottom:50px
+.navbar-navlink-active {
+  color: black;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
 }
 
-#navbar-top-link{
-    padding-top:100px
+#navbar-top-link {
+  padding-top: 100px;
+}
+
+#logout-button {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 200px;
 }

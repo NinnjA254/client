@@ -1,14 +1,17 @@
 .App {
   display:flex;
   flex-direction: column;
+  font-family: "Roboto", sans-serif;
   
 }
 
 input{
   outline:none;
+  border:none
 }
 
 select{
   outline: none;
+  border:none
 }
 
